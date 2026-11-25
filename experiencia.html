@@ -11,82 +11,88 @@
 </head>
 
 <body>
-    <header class="topo">
-        <div class="container-topo">
-            <a href="index.html" class="nome-site">Pedro Zione</a>
+    <header class="barra-topo">
+        <div class="largura">
+            <a href="index.html" class="marca">Pedro Zione</a>
 
-            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
+            <button class="botao-menu" onclick="alternarMenu()" aria-label="Menu">☰</button>
 
-            <nav id="menu" class="navegacao">
+            <nav id="menu" class="links-menu">
                 <a href="index.html">Sobre Mim</a>
-                <a href="experiencia.html" class="ativo">Experiência</a>
+                <a href="experiencia.html" class="selecionado">Experiência</a>
                 <a href="interesses.html">Interesses</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
 
-    <main class="conteudo">
-        <section class="titulo-pagina animar">
+    <section class="faixa-titulo">
+        <div class="largura">
             <h1>Experiência Profissional</h1>
-            <p>Vivência prática com atendimento ao público, organização administrativa, trabalho em equipe e suporte técnico.</p>
+            <p>Trajetória de trabalho com atendimento ao público, organização administrativa e suporte técnico.</p>
+        </div>
+    </section>
+
+    <main class="largura area-principal">
+        <section class="bloco-secao animar">
+            <h2>Histórico de Trabalho</h2>
+
+            <div class="linha-tempo">
+                <article class="item-tempo">
+                    <div class="marcador-tempo"></div>
+                    <div class="topo-item-tempo">
+                        <h3>Recepcionista e Suporte em Edição</h3>
+                        <span class="status-atual">Atual</span>
+                    </div>
+                    <p class="local-trabalho">Radiotech • Londrina, PR</p>
+                    <p class="resumo-trabalho">
+                        Atendimento direto aos pacientes e suporte técnico na preparação de exames e fotografias ortodônticas.
+                    </p>
+                    <ul class="lista-tarefas">
+                        <li>Recepção, acolhimento e orientação aos pacientes na clínica;</li>
+                        <li>Agendamento e controle de horários dos exames radiológicos;</li>
+                        <li>Controle financeiro no balcão e realização de cobranças;</li>
+                        <li>Triagem e encaminhamento dos pacientes para a sala de exames;</li>
+                        <li>Auxílio na edição e alinhamento de fotografias clínicas;</li>
+                        <li>Conferência e embalagem final dos exames para entrega aos dentistas.</li>
+                    </ul>
+                </article>
+
+                <article class="item-tempo">
+                    <div class="marcador-tempo antigo"></div>
+                    <div class="topo-item-tempo">
+                        <h3>Operador de Caixa e Delivery</h3>
+                        <span class="status-antigo">Anterior</span>
+                    </div>
+                    <p class="local-trabalho">Super Muffato • Londrina, PR</p>
+                    <p class="resumo-trabalho">
+                        Atuação em loja de grande fluxo, com foco em agilidade no atendimento, conferência de pedidos e trabalho em equipe.
+                    </p>
+                    <ul class="lista-tarefas">
+                        <li>Atendimento ao cliente no caixa com cordialidade e rapidez;</li>
+                        <li>Registro de mercadorias, pagamentos e emissão de notas;</li>
+                        <li>Separação, conferência e embalagem de compras do Delivery;</li>
+                        <li>Organização das entregas junto à equipe de entregadores;</li>
+                        <li>Apoio operacional durante instabilidades no sistema de caixa.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section class="grade-dupla animar">
-            <article class="caixa-cargo">
-                <div class="cabecalho-cargo">
-                    <h2>Recepcionista e Suporte em Edição</h2>
-                    <span class="etiqueta-atual">Atual</span>
-                </div>
-                <p class="empresa">Radiotech • Londrina, PR</p>
-                <p class="descricao-cargo">
-                    Atuação no atendimento ao público e suporte na preparação de documentação odontológica, mantendo a organização da agenda e a qualidade das entregas.
-                </p>
-                <ul class="atividades">
-                    <li>Recepção e orientação aos pacientes na clínica;</li>
-                    <li>Agendamento e organização de horários de exames;</li>
-                    <li>Realização de cobranças e controle de pagamentos no atendimento;</li>
-                    <li>Triagem e encaminhamento dos pacientes para os exames;</li>
-                    <li>Auxílio na edição e alinhamento de fotografias clínicas;</li>
-                    <li>Conferência e embalagem dos exames para entrega aos dentistas.</li>
-                </ul>
-            </article>
-
-            <article class="caixa-cargo">
-                <div class="cabecalho-cargo">
-                    <h2>Operador de Caixa e Delivery</h2>
-                    <span class="etiqueta-anterior">Anterior</span>
-                </div>
-                <p class="empresa">Super Muffato • Londrina, PR</p>
-                <p class="descricao-cargo">
-                    Experiência em ambiente de grande movimento, desenvolvendo agilidade, trabalho em equipe, atenção aos detalhes e resolução de problemas sob pressão.
-                </p>
-                <ul class="atividades">
-                    <li>Atendimento direto ao cliente no caixa com cordialidade;</li>
-                    <li>Registro de produtos, pagamentos e emissão de notas;</li>
-                    <li>Separação, conferência e embalagem de pedidos do Delivery;</li>
-                    <li>Organização das entregas junto aos entregadores;</li>
-                    <li>Apoio rápido em momentos de instabilidade no sistema.</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="secao animar">
+        <section class="bloco-secao animar">
             <h2>Certificado</h2>
 
-            <div class="bloco-certificado">
-                <div class="moldura-certificado">
-                    <img src="Certificado.png" alt="Certificado TechFil 2026 - XX Semana Tecnológica UniFil">
-                </div>
+            <div class="area-certificado">
+                <img src="Certificado.png" alt="Certificado TechFil 2026 - XX Semana Tecnológica UniFil" class="img-cert">
 
-                <div class="texto-certificado">
+                <div class="dados-cert">
                     <h3>TechFil 2026 — XX Semana Tecnológica UniFil</h3>
                     <p>
-                        Participação na XX Semana Tecnológica do Centro Universitário Filadélfia (UNIFIL), realizada de 28 de setembro a 2 de outubro de 2026, com carga horária total de 40 horas.
+                        Participação na XX Semana Tecnológica do Centro Universitário Filadélfia (UNIFIL), realizada entre 28 de setembro e 2 de outubro de 2026, totalizando 40 horas de atividades.
                     </p>
-                    <p class="meta-certificado">Emitido em 5 de outubro de 2026 • Londrina, PR</p>
+                    <p class="data-cert">Emitido em 5 de outubro de 2026 • Londrina, PR</p>
 
-                    <button type="button" class="botao" onclick="ampliarCertificado()">Ver em tamanho maior</button>
+                    <button type="button" class="btn-vinho" onclick="ampliarCertificado()">Ampliar Certificado</button>
                 </div>
             </div>
         </section>
@@ -100,10 +106,10 @@
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="container-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
+        <div class="largura rodape-conteudo">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto</p>
 
-            <div class="links-sociais">
+            <div class="sociais">
                 <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
                     <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
                     LinkedIn
