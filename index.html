@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <header class="topo">
-        <div class="container-topo">
-            <a href="index.html" class="nome-site">Pedro Zione</a>
+    <header class="barra-topo">
+        <div class="largura">
+            <a href="index.html" class="marca">Pedro Zione</a>
 
-            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
+            <button class="botao-menu" onclick="alternarMenu()" aria-label="Menu">☰</button>
 
-            <nav id="menu" class="navegacao">
-                <a href="index.html" class="ativo">Sobre Mim</a>
+            <nav id="menu" class="links-menu">
+                <a href="index.html" class="selecionado">Sobre Mim</a>
                 <a href="experiencia.html">Experiência</a>
                 <a href="interesses.html">Interesses</a>
                 <a href="#contato">Contato</a>
@@ -26,66 +26,87 @@
         </div>
     </header>
 
-    <main class="conteudo">
-        <section class="bloco-sobre animar">
-            <img src="Perfil.jpg" alt="Foto de Pedro Zione Sousa Neto" class="foto-perfil">
+    <section class="faixa-apresentacao">
+        <div class="largura grade-perfil">
+            <img src="Perfil.jpg" alt="Pedro Zione Sousa Neto" class="avatar">
 
-            <div class="info-sobre">
+            <div class="texto-perfil">
+                <span class="etiqueta-curso">Engenharia de Software • UNIFIL</span>
                 <h1>Pedro Zione Sousa Neto</h1>
-                <p class="curso">Estudante de Engenharia de Software • UNIFIL (23 anos)</p>
+                <p class="sub-info">23 anos • Londrina, Paraná • Foco em Back-end</p>
 
-                <p>
-                    Olá! Sou estudante de Engenharia de Software no Centro Universitário Filadélfia (UNIFIL), em Londrina. Tenho maior interesse na área de <strong>desenvolvimento back-end</strong>, onde pretendo me especializar, mas também gosto de aprender e explorar outras áreas da computação.
+                <p class="bio">
+                    Olá! Sou estudante de Engenharia de Software no Centro Universitário Filadélfia (UNIFIL). Tenho interesse principal em <strong>desenvolvimento back-end</strong>, mas também busco construir uma boa base nas demais áreas da programação.
                 </p>
-                <p>
-                    Sou dedicado, curioso e procuro sempre encarar novos desafios para evoluir tanto na parte técnica quanto pessoal. Busco oportunidades para colocar em prática os conhecimentos que venho construindo na faculdade.
+                <p class="bio">
+                    No dia a dia concilio a graduação com o trabalho na área de radiologia odontológica, o que me ajudou bastante a ter organização, atenção aos detalhes e responsabilidade com prazos.
                 </p>
 
-                <div class="links-rapidos">
-                    <a href="experiencia.html" class="botao">Minha Experiência e Certificado</a>
-                    <a href="interesses.html" class="botao-borda">Meus Interesses</a>
+                <div class="acoes">
+                    <a href="experiencia.html" class="btn-vinho">Ver Experiência e Certificado</a>
+                    <a href="interesses.html" class="btn-roxo">Hobbies e Leituras</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="secao animar">
-            <h2>Tecnologias que estou estudando</h2>
-            <p class="texto-apoio">Linguagens e ferramentas que venho praticando nas disciplinas e projetos pessoais:</p>
+    <main class="largura area-principal">
+        <section class="bloco-secao animar">
+            <h2>Tecnologias e ferramentas que estou estudando</h2>
 
-            <div class="lista-tech">
-                <div class="item-tech">
-                    <h3>Python</h3>
-                    <p>Lógica de programação, resolução de algoritmos, automação e base para back-end.</p>
+            <div class="duas-colunas">
+                <div class="coluna-lista">
+                    <h3>Programação e Web</h3>
+                    <ul class="lista-simples">
+                        <li>
+                            <strong>Python</strong>
+                            <span>Lógica de programação, resolução de algoritmos e base voltada para back-end.</span>
+                        </li>
+                        <li>
+                            <strong>Java</strong>
+                            <span>Programação Orientada a Objetos, interfaces, recursividade e tratamento de exceções.</span>
+                        </li>
+                        <li>
+                            <strong>HTML</strong>
+                            <span>Estruturação e organização do conteúdo de páginas web.</span>
+                        </li>
+                        <li>
+                            <strong>CSS</strong>
+                            <span>Estilização de telas, alinhamento com Flexbox e Grid e adaptação para celular.</span>
+                        </li>
+                        <li>
+                            <strong>JavaScript</strong>
+                            <span>Funções, eventos e manipulação de elementos na página.</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="item-tech">
-                    <h3>Java</h3>
-                    <p>Programação Orientada a Objetos, estruturas de dados, recursividade e tratamento de exceções.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>HTML5</h3>
-                    <p>Estruturação semântica de páginas web, organização de conteúdo e acessibilidade.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>CSS3</h3>
-                    <p>Estilização de interfaces, Flexbox, Grid Layout, responsividade e animações.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>JavaScript</h3>
-                    <p>Interatividade no navegador, funções e manipulação de elementos do DOM.</p>
+                <div class="coluna-lista">
+                    <h3>Ferramentas do dia a dia</h3>
+                    <ul class="lista-simples">
+                        <li>
+                            <strong>Git e GitHub</strong>
+                            <span>Controle de versão, organização de repositórios e publicação de sites no GitHub Pages.</span>
+                        </li>
+                        <li>
+                            <strong>IntelliJ IDEA e VS Code</strong>
+                            <span>Ambientes que utilizo para programar em Java e desenvolver páginas web.</span>
+                        </li>
+                        <li>
+                            <strong>Edição de Imagens Clínicas</strong>
+                            <span>Alinhamento e padronização de fotografias odontológicas no trabalho.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="container-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
+        <div class="largura rodape-conteudo">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto</p>
 
-            <div class="links-sociais">
+            <div class="sociais">
                 <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
                     <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
                     LinkedIn
