@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Zione - Portfólio</title>
+    <title>Interesses - Pedro Zione</title>
     <link rel="icon" href="Perfil.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -18,65 +18,94 @@
             <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
 
             <nav id="menu" class="navegacao">
-                <a href="index.html" class="ativo">Sobre Mim</a>
+                <a href="index.html">Sobre Mim</a>
                 <a href="experiencia.html">Experiência</a>
-                <a href="interesses.html">Interesses</a>
+                <a href="interesses.html" class="ativo">Interesses</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
 
     <main class="conteudo">
-        <section class="bloco-sobre animar">
-            <img src="Perfil.jpg" alt="Foto de Pedro Zione Sousa Neto" class="foto-perfil">
+        <section class="titulo-pagina animar">
+            <h1>Hobbies e Interesses</h1>
+            <p>Desde criança gosto muito de ler e jogar — atividades que fazem parte da minha rotina e estimulam o raciocínio estratégico e a criatividade.</p>
+        </section>
 
-            <div class="info-sobre">
-                <h1>Pedro Zione Sousa Neto</h1>
-                <p class="curso">Estudante de Engenharia de Software • UNIFIL (23 anos)</p>
+        <section class="secao animar">
+            <h2>Obras e Jogos Favoritos</h2>
 
-                <p>
-                    Olá! Sou estudante de Engenharia de Software no Centro Universitário Filadélfia (UNIFIL), em Londrina. Tenho maior interesse na área de <strong>desenvolvimento back-end</strong>, onde pretendo me especializar, mas também gosto de aprender e explorar outras áreas da computação.
-                </p>
-                <p>
-                    Sou dedicado, curioso e procuro sempre encarar novos desafios para evoluir tanto na parte técnica quanto pessoal. Busco oportunidades para colocar em prática os conhecimentos que venho construindo na faculdade.
-                </p>
+            <div class="grade-tres">
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="TotalWarWarhammer.jpg" alt="Total War: Warhammer">
+                    </div>
+                    <div class="corpo-card">
+                        <span class="tipo">Jogo Favorito</span>
+                        <h3>Total War: Warhammer</h3>
+                        <p>
+                            Jogo de estratégia que mistura gerenciamento de impérios por turnos com batalhas táticas em tempo real no universo de Warhammer Fantasy. Permite comandar facções como o Império, Anões, Pele-verdes e Condes Vampiros, administrando cidades, diplomacia e exércitos completos.
+                        </p>
+                    </div>
+                </article>
 
-                <div class="links-rapidos">
-                    <a href="experiencia.html" class="botao">Minha Experiência e Certificado</a>
-                    <a href="interesses.html" class="botao-borda">Meus Interesses</a>
-                </div>
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="SenhorDosAneis.jpg" alt="O Senhor dos Anéis">
+                    </div>
+                    <div class="corpo-card">
+                        <span class="tipo">Livro Favorito</span>
+                        <h3>O Senhor dos Anéis</h3>
+                        <p>
+                            Obra clássica de fantasia escrita por J.R.R. Tolkien, dividida em <em>A Sociedade do Anel</em>, <em>As Duas Torres</em> e <em>O Retorno do Rei</em>. Acompanha a jornada de Frodo Bolseiro e seus companheiros pela Terra-média para destruir o Um Anel e impedir a ascensão de Sauron.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="Tomie.jpg" alt="Mangá Tomie">
+                    </div>
+                    <div class="corpo-card">
+                        <span class="tipo">Mangá Favorito</span>
+                        <h3>Tomie</h3>
+                        <p>
+                            Obra de terror psicológico e corporal criada por Junji Ito. A história acompanha uma garota misteriosa capaz de despertar obsessões extremas nas pessoas ao seu redor, marcada por sua imortalidade e pela capacidade de se regenerar e multiplicar a partir de partes do próprio corpo.
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section class="secao animar">
-            <h2>Tecnologias que estou estudando</h2>
-            <p class="texto-apoio">Linguagens e ferramentas que venho praticando nas disciplinas e projetos pessoais:</p>
+            <h2>Autores Favoritos</h2>
 
-            <div class="lista-tech">
-                <div class="item-tech">
-                    <h3>Python</h3>
-                    <p>Lógica de programação, resolução de algoritmos, automação e base para back-end.</p>
-                </div>
+            <div class="grade-dupla">
+                <article class="card-autor">
+                    <div class="img-autor">
+                        <img src="JunjiIto.jpg" alt="Junji Ito">
+                    </div>
+                    <div class="corpo-autor">
+                        <span class="tipo">Mangaká • Terror</span>
+                        <h3>Junji Ito</h3>
+                        <p>
+                            Autor japonês reconhecido mundialmente pelos mangás de horror. Suas obras chamam atenção pelo nível de detalhe nas ilustrações e por histórias que exploram o terror psicológico e o desconhecido, como <strong>Tomie</strong>, <strong>Uzumaki</strong> e <strong>Gyo</strong>.
+                        </p>
+                    </div>
+                </article>
 
-                <div class="item-tech">
-                    <h3>Java</h3>
-                    <p>Programação Orientada a Objetos, estruturas de dados, recursividade e tratamento de exceções.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>HTML5</h3>
-                    <p>Estruturação semântica de páginas web, organização de conteúdo e acessibilidade.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>CSS3</h3>
-                    <p>Estilização de interfaces, Flexbox, Grid Layout, responsividade e animações.</p>
-                </div>
-
-                <div class="item-tech">
-                    <h3>JavaScript</h3>
-                    <p>Interatividade no navegador, funções e manipulação de elementos do DOM.</p>
-                </div>
+                <article class="card-autor">
+                    <div class="img-autor">
+                        <img src="Tolkien.png" alt="J.R.R. Tolkien">
+                    </div>
+                    <div class="corpo-autor">
+                        <span class="tipo">Escritor • Fantasia</span>
+                        <h3>J.R.R. Tolkien</h3>
+                        <p>
+                            Escritor e professor britânico que marcou a literatura fantástica moderna ao construir toda a mitologia, história e línguas da Terra-média. É autor de obras fundamentais como <strong>O Hobbit</strong>, <strong>O Senhor dos Anéis</strong> e <strong>O Silmarillion</strong>.
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
