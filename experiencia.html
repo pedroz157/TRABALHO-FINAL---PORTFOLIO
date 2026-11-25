@@ -4,143 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experiência profissional e certificações de Pedro Zione Sousa Neto.">
-    <title>Experiência | Pedro Zione</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <title>Experiência - Pedro Zione</title>
     <link rel="icon" href="Perfil.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo">Pedro Zione <span>&lt;/&gt;</span></a>
+    <header class="topo">
+        <div class="container-topo">
+            <a href="index.html" class="nome-site">Pedro Zione</a>
 
-        <button class="menu-botao" onclick="alternarMenu()" aria-label="Abrir menu" aria-expanded="false">
-            ☰ Menu
-        </button>
+            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
 
-        <nav id="menu" class="menu">
-            <a href="index.html">Sobre Mim</a>
-            <a href="experiencia.html" class="ativo" aria-current="page">Experiência</a>
-            <a href="interesses.html">Interesses</a>
-            <a href="#contato">Contato</a>
-        </nav>
+            <nav id="menu" class="navegacao">
+                <a href="index.html">Sobre Mim</a>
+                <a href="experiencia.html" class="ativo">Experiência</a>
+                <a href="interesses.html">Interesses</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="faixa">TRAJETÓRIA PROFISSIONAL • RESPONSABILIDADES • CERTIFICAÇÃO</div>
-
-    <main>
-        <section class="cabecalho-pagina animar">
-            <span class="subtitulo">CARREIRA E VIVÊNCIA PRÁTICA</span>
-            <h1>Experiência <span>Profissional</span></h1>
-            <p class="descricao-pagina">
-                Minha trajetória reúne atendimento ao público, organização de fluxos operacionais, precisão administrativa e suporte técnico em edição digital.
-            </p>
+    <main class="conteudo">
+        <section class="titulo-pagina animar">
+            <h1>Experiência Profissional</h1>
+            <p>Vivência prática com atendimento ao público, organização administrativa, trabalho em equipe e suporte técnico.</p>
         </section>
 
-        <section class="grade-experiencias animar">
-            <article class="card-experiencia destaque-atual">
-                <div class="topo-cargo">
-                    <span class="badge-atual">ATUAL</span>
-                    <span class="periodo">Radiologia Odontológica</span>
+        <section class="grade-dupla animar">
+            <article class="caixa-cargo">
+                <div class="cabecalho-cargo">
+                    <h2>Recepcionista e Suporte em Edição</h2>
+                    <span class="etiqueta-atual">Atual</span>
                 </div>
-                <h2>Recepcionista &amp; Suporte em Edição</h2>
-                <h3>Radiotech — Londrina, PR</h3>
-                <p class="resumo-cargo">
-                    Atuação na linha de frente do atendimento clínico e no suporte técnico de documentação ortodôntica, garantindo agilidade, organização e qualidade na entrega aos profissionais.
+                <p class="empresa">Radiotech • Londrina, PR</p>
+                <p class="descricao-cargo">
+                    Atuação no atendimento ao público e suporte na preparação de documentação odontológica, mantendo a organização da agenda e a qualidade das entregas.
                 </p>
-                <ul class="lista-atividades">
-                    <li>Recepção humanizada e orientação completa aos pacientes.</li>
-                    <li>Gestão de agenda e marcação eficiente de exames radiológicos.</li>
-                    <li>Controle financeiro no atendimento e realização de cobranças.</li>
-                    <li>Triagem e encaminhamento organizado dos pacientes para a equipe técnica.</li>
-                    <li>Auxílio na edição e padronização de fotografias clínicas dos pacientes.</li>
-                    <li>Preparo, conferência e embalagem final dos exames entregues aos dentistas.</li>
+                <ul class="atividades">
+                    <li>Recepção e orientação aos pacientes na clínica;</li>
+                    <li>Agendamento e organização de horários de exames;</li>
+                    <li>Realização de cobranças e controle de pagamentos no atendimento;</li>
+                    <li>Triagem e encaminhamento dos pacientes para os exames;</li>
+                    <li>Auxílio na edição e alinhamento de fotografias clínicas;</li>
+                    <li>Conferência e embalagem dos exames para entrega aos dentistas.</li>
                 </ul>
             </article>
 
-            <article class="card-experiencia">
-                <div class="topo-cargo">
-                    <span class="badge-anterior">ANTERIOR</span>
-                    <span class="periodo">2024 – 2025</span>
+            <article class="caixa-cargo">
+                <div class="cabecalho-cargo">
+                    <h2>Operador de Caixa e Delivery</h2>
+                    <span class="etiqueta-anterior">Anterior</span>
                 </div>
-                <h2>Operador de Caixa &amp; Delivery</h2>
-                <h3>Super Muffato — Londrina, PR</h3>
-                <p class="resumo-cargo">
-                    Experiência sólida em ambiente de alta demanda, desenvolvendo resiliência, trabalho em equipe, agilidade operacional e resolução rápida de problemas sob pressão.
+                <p class="empresa">Super Muffato • Londrina, PR</p>
+                <p class="descricao-cargo">
+                    Experiência em ambiente de grande movimento, desenvolvendo agilidade, trabalho em equipe, atenção aos detalhes e resolução de problemas sob pressão.
                 </p>
-                <ul class="lista-atividades">
-                    <li>Atendimento ao cliente com empatia, cordialidade e foco na solução de dúvidas.</li>
-                    <li>Operação de caixa com precisão no registro de produtos, numerário e notas fiscais.</li>
-                    <li>Separação, conferência e embalagem de pedidos do setor de Delivery.</li>
-                    <li>Comunicação ágil entre loja e entregadores para cumprimento de prazos.</li>
-                    <li>Atuação rápida em momentos de instabilidade de sistema, mantendo o fluxo organizado.</li>
+                <ul class="atividades">
+                    <li>Atendimento direto ao cliente no caixa com cordialidade;</li>
+                    <li>Registro de produtos, pagamentos e emissão de notas;</li>
+                    <li>Separação, conferência e embalagem de pedidos do Delivery;</li>
+                    <li>Organização das entregas junto aos entregadores;</li>
+                    <li>Apoio rápido em momentos de instabilidade no sistema.</li>
                 </ul>
             </article>
         </section>
 
-        <section id="certificado" class="secao-certificado animar">
-            <span class="subtitulo">FORMAÇÃO COMPLEMENTAR</span>
-            <h2>Certificado <span>Conquistado</span></h2>
+        <section class="secao animar">
+            <h2>Certificado</h2>
 
-            <div class="card-certificado">
-                <div class="area-imagem-certificado">
-                    <img id="imgCertificado" src="Certificado.png" alt="Certificado TechFil 2026 - XX Semana Tecnológica UniFil">
+            <div class="bloco-certificado">
+                <div class="moldura-certificado">
+                    <img src="Certificado.png" alt="Certificado TechFil 2026 - XX Semana Tecnológica UniFil">
                 </div>
 
-                <div class="info-certificado">
-                    <span class="tag-evento">EVENTO ACADÊMICO • 40 HORAS</span>
+                <div class="texto-certificado">
                     <h3>TechFil 2026 — XX Semana Tecnológica UniFil</h3>
                     <p>
-                        Participação na XX Semana Tecnológica do Centro Universitário Filadélfia (UNIFIL), realizada entre 28 de setembro e 2 de outubro de 2026 em Londrina - PR, explorando conexões, dados e impacto na área de computação.
+                        Participação na XX Semana Tecnológica do Centro Universitário Filadélfia (UNIFIL), realizada de 28 de setembro a 2 de outubro de 2026, com carga horária total de 40 horas.
                     </p>
-                    <p class="detalhe-certificado">
-                        <strong>Instituição:</strong> UNIFIL &nbsp;|&nbsp; <strong>Emissão:</strong> 05/10/2026
-                    </p>
+                    <p class="meta-certificado">Emitido em 5 de outubro de 2026 • Londrina, PR</p>
 
-                    <div class="botoes-certificado">
-                        <button type="button" class="botao-principal" onclick="ampliarCertificado()">
-                            Ampliar Certificado 🔍
-                        </button>
-                    </div>
+                    <button type="button" class="botao" onclick="ampliarCertificado()">Ver em tamanho maior</button>
                 </div>
             </div>
         </section>
 
-        <!-- ADICIONAL: Estrutura de janela modal para ampliar a imagem do certificado em tela cheia -->
-        <div id="modalCertificado" class="modal-certificado" onclick="fecharCertificado()">
-            <div class="modal-conteudo">
-                <button type="button" class="botao-fechar-modal" onclick="fecharCertificado()">✕ Fechar</button>
+        <div id="modalCertificado" class="modal" onclick="fecharCertificado()">
+            <div class="caixa-modal">
+                <button type="button" class="fechar-modal" onclick="fecharCertificado()">Fechar ✕</button>
                 <img src="Certificado.png" alt="Certificado TechFil 2026 Ampliado">
             </div>
         </div>
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="info-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto — Londrina, PR</p>
-        </div>
+        <div class="container-rodape">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
 
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Ícone do LinkedIn">
-                <span>LinkedIn</span>
-            </a>
+            <div class="links-sociais">
+                <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
+                    LinkedIn
+                </a>
 
-            <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="Github.png" alt="Ícone do GitHub">
-                <span>GitHub</span>
-            </a>
+                <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer">
+                    <img src="Github.png" alt="GitHub">
+                    GitHub
+                </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer" title="Enviar e-mail pelo Gmail">
-                <img src="gmail.png" alt="Ícone do Gmail">
-                <span>Gmail</span>
-            </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="gmail.png" alt="Gmail">
+                    Gmail
+                </a>
+            </div>
         </div>
     </footer>
 </body>
