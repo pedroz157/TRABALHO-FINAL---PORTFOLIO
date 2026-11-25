@@ -11,50 +11,52 @@
 </head>
 
 <body>
-    <header class="topo">
-        <div class="container-topo">
-            <a href="index.html" class="nome-site">Pedro Zione</a>
+    <header class="barra-topo">
+        <div class="largura">
+            <a href="index.html" class="marca">Pedro Zione</a>
 
-            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
+            <button class="botao-menu" onclick="alternarMenu()" aria-label="Menu">☰</button>
 
-            <nav id="menu" class="navegacao">
+            <nav id="menu" class="links-menu">
                 <a href="index.html">Sobre Mim</a>
                 <a href="experiencia.html">Experiência</a>
-                <a href="interesses.html" class="ativo">Interesses</a>
+                <a href="interesses.html" class="selecionado">Interesses</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
 
-    <main class="conteudo">
-        <section class="titulo-pagina animar">
+    <section class="faixa-titulo">
+        <div class="largura">
             <h1>Hobbies e Interesses</h1>
-            <p>Desde criança gosto muito de ler e jogar — atividades que fazem parte da minha rotina e estimulam o raciocínio estratégico e a criatividade.</p>
-        </section>
+            <p>Desde criança gosto muito de ler e jogar — atividades que fazem parte da minha rotina fora da faculdade e do trabalho.</p>
+        </div>
+    </section>
 
-        <section class="secao animar">
+    <main class="largura area-principal">
+        <section class="bloco-secao animar">
             <h2>Obras e Jogos Favoritos</h2>
 
-            <div class="grade-tres">
-                <article class="card-item">
-                    <div class="img-padrao">
+            <div class="grade-obras">
+                <article class="obra">
+                    <div class="capa-obra">
                         <img src="TotalWarWarhammer.jpg" alt="Total War: Warhammer">
                     </div>
-                    <div class="corpo-card">
-                        <span class="tipo">Jogo Favorito</span>
+                    <div class="texto-obra">
+                        <span class="categoria">Jogo Favorito</span>
                         <h3>Total War: Warhammer</h3>
                         <p>
-                            Jogo de estratégia que mistura gerenciamento de impérios por turnos com batalhas táticas em tempo real no universo de Warhammer Fantasy. Permite comandar facções como o Império, Anões, Pele-verdes e Condes Vampiros, administrando cidades, diplomacia e exércitos completos.
+                            Jogo de estratégia que combina gerenciamento de impérios por turnos com batalhas táticas em tempo real no universo de Warhammer Fantasy. Permite comandar facções como o Império, Anões, Pele-verdes e Condes Vampiros, gerenciando cidades, diplomacia e exércitos completos.
                         </p>
                     </div>
                 </article>
 
-                <article class="card-item">
-                    <div class="img-padrao">
+                <article class="obra">
+                    <div class="capa-obra">
                         <img src="SenhorDosAneis.jpg" alt="O Senhor dos Anéis">
                     </div>
-                    <div class="corpo-card">
-                        <span class="tipo">Livro Favorito</span>
+                    <div class="texto-obra">
+                        <span class="categoria">Livro Favorito</span>
                         <h3>O Senhor dos Anéis</h3>
                         <p>
                             Obra clássica de fantasia escrita por J.R.R. Tolkien, dividida em <em>A Sociedade do Anel</em>, <em>As Duas Torres</em> e <em>O Retorno do Rei</em>. Acompanha a jornada de Frodo Bolseiro e seus companheiros pela Terra-média para destruir o Um Anel e impedir a ascensão de Sauron.
@@ -62,12 +64,12 @@
                     </div>
                 </article>
 
-                <article class="card-item">
-                    <div class="img-padrao">
+                <article class="obra">
+                    <div class="capa-obra">
                         <img src="Tomie.jpg" alt="Mangá Tomie">
                     </div>
-                    <div class="corpo-card">
-                        <span class="tipo">Mangá Favorito</span>
+                    <div class="texto-obra">
+                        <span class="categoria">Mangá Favorito</span>
                         <h3>Tomie</h3>
                         <p>
                             Obra de terror psicológico e corporal criada por Junji Ito. A história acompanha uma garota misteriosa capaz de despertar obsessões extremas nas pessoas ao seu redor, marcada por sua imortalidade e pela capacidade de se regenerar e multiplicar a partir de partes do próprio corpo.
@@ -77,32 +79,28 @@
             </div>
         </section>
 
-        <section class="secao animar">
+        <section class="bloco-secao animar">
             <h2>Autores Favoritos</h2>
 
-            <div class="grade-dupla">
-                <article class="card-autor">
-                    <div class="img-autor">
-                        <img src="JunjiIto.jpg" alt="Junji Ito">
-                    </div>
-                    <div class="corpo-autor">
-                        <span class="tipo">Mangaká • Terror</span>
+            <div class="duas-colunas">
+                <article class="autor">
+                    <img src="JunjiIto.jpg" alt="Junji Ito" class="foto-autor">
+                    <div>
+                        <span class="categoria">Mangaká • Terror</span>
                         <h3>Junji Ito</h3>
                         <p>
-                            Autor japonês reconhecido mundialmente pelos mangás de horror. Suas obras chamam atenção pelo nível de detalhe nas ilustrações e por histórias que exploram o terror psicológico e o desconhecido, como <strong>Tomie</strong>, <strong>Uzumaki</strong> e <strong>Gyo</strong>.
+                            Autor japonês reconhecido pelos mangás de horror. Suas histórias chamam atenção pelo nível de detalhe nos desenhos e por explorarem o terror psicológico e o desconhecido, como em <strong>Tomie</strong>, <strong>Uzumaki</strong> e <strong>Gyo</strong>.
                         </p>
                     </div>
                 </article>
 
-                <article class="card-autor">
-                    <div class="img-autor">
-                        <img src="Tolkien.png" alt="J.R.R. Tolkien">
-                    </div>
-                    <div class="corpo-autor">
-                        <span class="tipo">Escritor • Fantasia</span>
+                <article class="autor">
+                    <img src="Tolkien.png" alt="J.R.R. Tolkien" class="foto-autor">
+                    <div>
+                        <span class="categoria">Escritor • Fantasia</span>
                         <h3>J.R.R. Tolkien</h3>
                         <p>
-                            Escritor e professor britânico que marcou a literatura fantástica moderna ao construir toda a mitologia, história e línguas da Terra-média. É autor de obras fundamentais como <strong>O Hobbit</strong>, <strong>O Senhor dos Anéis</strong> e <strong>O Silmarillion</strong>.
+                            Escritor e professor britânico que marcou a literatura fantástica moderna ao criar toda a mitologia, história e idiomas da Terra-média. É autor de livros como <strong>O Hobbit</strong>, <strong>O Senhor dos Anéis</strong> e <strong>O Silmarillion</strong>.
                         </p>
                     </div>
                 </article>
@@ -111,10 +109,10 @@
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="container-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
+        <div class="largura rodape-conteudo">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto</p>
 
-            <div class="links-sociais">
+            <div class="sociais">
                 <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
                     <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
                     LinkedIn
