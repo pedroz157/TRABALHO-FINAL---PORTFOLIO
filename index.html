@@ -4,119 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio pessoal de Pedro Zione Sousa Neto, estudante de Engenharia de Software na UNIFIL.">
-    <title>Sobre Mim | Pedro Zione</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <title>Pedro Zione - Portfólio</title>
     <link rel="icon" href="Perfil.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo">Pedro Zione <span>&lt;/&gt;</span></a>
+    <header class="topo">
+        <div class="container-topo">
+            <a href="index.html" class="nome-site">Pedro Zione</a>
 
-        <button class="menu-botao" onclick="alternarMenu()" aria-label="Abrir menu" aria-expanded="false">
-            ☰ Menu
-        </button>
+            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
 
-        <nav id="menu" class="menu">
-            <a href="index.html" class="ativo" aria-current="page">Sobre Mim</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="interesses.html">Interesses</a>
-            <a href="#contato">Contato</a>
-        </nav>
+            <nav id="menu" class="navegacao">
+                <a href="index.html" class="ativo">Sobre Mim</a>
+                <a href="experiencia.html">Experiência</a>
+                <a href="interesses.html">Interesses</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="faixa">ENGENHARIA DE SOFTWARE • FOCO EM DESENVOLVIMENTO BACK-END • UNIFIL</div>
+    <main class="conteudo">
+        <section class="bloco-sobre animar">
+            <img src="Perfil.jpg" alt="Foto de Pedro Zione Sousa Neto" class="foto-perfil">
 
-    <main>
-        <section class="apresentacao animar">
-            <div class="moldura-perfil">
-                <img src="Perfil.jpg" alt="Foto de perfil de Pedro Zione Sousa Neto" class="foto-perfil">
-            </div>
-
-            <div class="texto-apresentacao">
-                <span class="subtitulo">PORTFÓLIO PESSOAL • 23 ANOS</span>
-                <h1>Pedro Zione <span>Sousa Neto</span></h1>
-                <p class="destaque-curso">Estudante de Engenharia de Software — Centro Universitário Filadélfia (UNIFIL)</p>
+            <div class="info-sobre">
+                <h1>Pedro Zione Sousa Neto</h1>
+                <p class="curso">Estudante de Engenharia de Software • UNIFIL (23 anos)</p>
 
                 <p>
-                    Olá! Tenho forte interesse em <strong>desenvolvimento back-end</strong>, área na qual pretendo me aprofundar, mas também busco adquirir conhecimentos sólidos em diferentes frentes da tecnologia.
+                    Olá! Sou estudante de Engenharia de Software no Centro Universitário Filadélfia (UNIFIL), em Londrina. Tenho maior interesse na área de <strong>desenvolvimento back-end</strong>, onde pretendo me especializar, mas também gosto de aprender e explorar outras áreas da computação.
                 </p>
                 <p>
-                    Sou dedicado, curioso e estou sempre procurando aprender coisas novas e enfrentar desafios que contribuam para meu crescimento profissional e pessoal. Meu objetivo é conquistar oportunidades na área de tecnologia para aplicar na prática o que venho construindo na graduação.
+                    Sou dedicado, curioso e procuro sempre encarar novos desafios para evoluir tanto na parte técnica quanto pessoal. Busco oportunidades para colocar em prática os conhecimentos que venho construindo na faculdade.
                 </p>
 
-                <div class="botoes-acao">
-                    <a href="experiencia.html" class="botao-principal">Ver Experiência e Certificado ↗</a>
-                    <a href="#tecnologias" class="botao-secundario">Tecnologias em Estudo ↓</a>
+                <div class="links-rapidos">
+                    <a href="experiencia.html" class="botao">Minha Experiência e Certificado</a>
+                    <a href="interesses.html" class="botao-borda">Meus Interesses</a>
                 </div>
             </div>
         </section>
 
-        <section id="tecnologias" class="secao-tecnologias animar">
-            <span class="subtitulo">STACK EM DESENVOLVIMENTO</span>
-            <h2>O que estou <span>estudando</span></h2>
+        <section class="secao animar">
+            <h2>Tecnologias que estou estudando</h2>
+            <p class="texto-apoio">Linguagens e ferramentas que venho praticando nas disciplinas e projetos pessoais:</p>
 
-            <div class="grade-tecnologias">
-                <article class="card-tech">
-                    <span class="numero-tech">01</span>
+            <div class="lista-tech">
+                <div class="item-tech">
                     <h3>Python</h3>
-                    <p>Lógica de programação, resolução de problemas, automação de tarefas e fundamentos para back-end.</p>
-                </article>
+                    <p>Lógica de programação, resolução de algoritmos, automação e base para back-end.</p>
+                </div>
 
-                <article class="card-tech">
-                    <span class="numero-tech">02</span>
+                <div class="item-tech">
                     <h3>Java</h3>
-                    <p>Programação Orientada a Objetos (POO), estruturas de dados, recursividade e tratamento de exceções.</p>
-                </article>
+                    <p>Programação Orientada a Objetos, estruturas de dados, recursividade e tratamento de exceções.</p>
+                </div>
 
-                <article class="card-tech">
-                    <span class="numero-tech">03</span>
+                <div class="item-tech">
                     <h3>HTML5</h3>
-                    <p>Estruturação semântica de páginas web, organização de conteúdo, acessibilidade e boas práticas.</p>
-                </article>
+                    <p>Estruturação semântica de páginas web, organização de conteúdo e acessibilidade.</p>
+                </div>
 
-                <article class="card-tech">
-                    <span class="numero-tech">04</span>
+                <div class="item-tech">
                     <h3>CSS3</h3>
-                    <p>Estilização responsiva, layouts modernos com Flexbox e Grid, paletas de cores e animações.</p>
-                </article>
+                    <p>Estilização de interfaces, Flexbox, Grid Layout, responsividade e animações.</p>
+                </div>
 
-                <article class="card-tech">
-                    <span class="numero-tech">05</span>
+                <div class="item-tech">
                     <h3>JavaScript</h3>
-                    <p>Criação de funções, lógica interativa no navegador e manipulação dinâmica do DOM.</p>
-                </article>
+                    <p>Interatividade no navegador, funções e manipulação de elementos do DOM.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="info-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto — Londrina, PR</p>
-        </div>
+        <div class="container-rodape">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
 
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Ícone do LinkedIn">
-                <span>LinkedIn</span>
-            </a>
+            <div class="links-sociais">
+                <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
+                    LinkedIn
+                </a>
 
-            <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="Github.png" alt="Ícone do GitHub">
-                <span>GitHub</span>
-            </a>
+                <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer">
+                    <img src="Github.png" alt="GitHub">
+                    GitHub
+                </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer" title="Enviar e-mail pelo Gmail">
-                <img src="gmail.png" alt="Ícone do Gmail">
-                <span>Gmail</span>
-            </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="gmail.png" alt="Gmail">
+                    Gmail
+                </a>
+            </div>
         </div>
     </footer>
 </body>
