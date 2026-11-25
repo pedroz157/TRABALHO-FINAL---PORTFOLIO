@@ -1,0 +1,755 @@
+/* =========================================================
+   PALETA DE CORES (AZUL E PRETO) E CONFIGURAÇÕES GERAIS
+   Baseado nos conceitos apresentados nos trabalhos de referência
+   ========================================================= */
+
+   :root {
+    --preto-fundo: #060911;
+    --preto-card: #0c1220;
+    --azul-escuro: #101b33;
+    --azul-medio: #1d4ed8;
+    --azul-brilho: #38bdf8;
+    --azul-suave: #93c5fd;
+    --texto-principal: #f1f5f9;
+    --texto-secundario: #94a3b8;
+    --borda-azul: rgba(56, 189, 248, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(ellipse at 85% 10%, rgba(29, 78, 216, 0.22) 0%, transparent 45%),
+        radial-gradient(ellipse at 10% 90%, rgba(14, 165, 233, 0.14) 0%, transparent 45%),
+        var(--preto-fundo);
+    color: var(--texto-principal);
+    font-family: 'Outfit', Arial, sans-serif;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   CABEÇALHO E MENU PADRONIZADO
+   ========================================================= */
+
+.cabecalho {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 6%;
+    background-color: rgba(6, 9, 17, 0.92);
+    border-bottom: 1px solid var(--borda-azul);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--texto-principal);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--azul-brilho);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.ativo,
+.menu a[aria-current="page"] {
+    color: var(--texto-principal);
+    background-color: rgba(29, 78, 216, 0.35);
+    border: 1px solid var(--borda-azul);
+}
+
+.menu-botao {
+    display: none;
+    background-color: var(--azul-escuro);
+    color: var(--texto-principal);
+    border: 1px solid var(--borda-azul);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.faixa {
+    background: linear-gradient(90deg, #091326, #16367a, #091326);
+    color: var(--azul-suave);
+    text-align: center;
+    padding: 12px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid var(--borda-azul);
+}
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+main {
+    flex: 1;
+    width: min(1150px, 90%);
+    margin: 50px auto 70px;
+}
+
+.subtitulo {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    color: var(--azul-brilho);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+h1 span,
+h2 span {
+    color: var(--azul-brilho);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 24px;
+}
+
+/* =========================================================
+   PÁGINA 1: SOBRE MIM E TECNOLOGIAS
+   ========================================================= */
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 45px;
+    align-items: center;
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.moldura-perfil {
+    width: 280px;
+    height: 330px;
+    margin: auto;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--azul-brilho);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.03);
+}
+
+.destaque-curso {
+    color: var(--azul-suave);
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+}
+
+.texto-apresentacao p {
+    color: var(--texto-secundario);
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.texto-apresentacao strong {
+    color: var(--texto-principal);
+}
+
+.botoes-acao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-principal {
+    background-color: var(--azul-medio);
+    color: white;
+    border: 1px solid var(--azul-brilho);
+}
+
+.botao-principal:hover {
+    background-color: var(--azul-brilho);
+    color: var(--preto-fundo);
+    transform: translateY(-3px);
+}
+
+.botao-secundario {
+    background-color: transparent;
+    color: var(--azul-suave);
+    border: 1px solid var(--borda-azul);
+}
+
+.botao-secundario:hover {
+    border-color: var(--azul-brilho);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* TECNOLOGIAS */
+
+.secao-tecnologias {
+    margin-top: 65px;
+}
+
+.grade-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+}
+
+.card-tech {
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-tech:hover {
+    transform: translateY(-6px);
+    border-color: var(--azul-brilho);
+}
+
+.numero-tech {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--azul-brilho);
+    font-size: 0.85rem;
+}
+
+.card-tech h3 {
+    font-size: 1.3rem;
+    margin: 10px 0 8px;
+    color: var(--texto-principal);
+}
+
+.card-tech p {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+/* =========================================================
+   PÁGINA 2: EXPERIÊNCIA PROFISSIONAL E CERTIFICADO
+   ========================================================= */
+
+.cabecalho-pagina {
+    margin-bottom: 40px;
+}
+
+.descricao-pagina {
+    color: var(--texto-secundario);
+    max-width: 720px;
+    font-size: 1.05rem;
+}
+
+.grade-experiencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.card-experiencia {
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 14px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-experiencia:hover {
+    transform: translateY(-5px);
+    border-color: var(--azul-brilho);
+}
+
+.destaque-atual {
+    border-left: 4px solid var(--azul-brilho);
+}
+
+.topo-cargo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.badge-atual,
+.badge-anterior {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.badge-atual {
+    background-color: rgba(56, 189, 248, 0.2);
+    color: var(--azul-brilho);
+    border: 1px solid var(--azul-brilho);
+}
+
+.badge-anterior {
+    background-color: rgba(148, 163, 184, 0.15);
+    color: var(--texto-secundario);
+}
+
+.periodo {
+    font-size: 0.85rem;
+    color: var(--azul-suave);
+}
+
+.card-experiencia h2 {
+    font-size: 1.45rem;
+    margin-bottom: 4px;
+}
+
+.card-experiencia h3 {
+    font-size: 1rem;
+    color: var(--azul-brilho);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.resumo-cargo {
+    color: var(--texto-secundario);
+    font-size: 0.94rem;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.lista-atividades {
+    padding-left: 20px;
+    color: var(--texto-principal);
+    font-size: 0.92rem;
+}
+
+.lista-atividades li {
+    margin-bottom: 8px;
+}
+
+/* CERTIFICADO */
+
+.secao-certificado {
+    margin-top: 65px;
+}
+
+.card-certificado {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 32px;
+    align-items: center;
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.area-imagem-certificado {
+    width: 100%;
+    height: 260px;
+    background-color: #05080f;
+    border: 1px solid var(--borda-azul);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-imagem-certificado img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.area-imagem-certificado img:hover {
+    transform: scale(1.03);
+}
+
+.tag-evento {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--azul-brilho);
+}
+
+.info-certificado h3 {
+    font-size: 1.4rem;
+    margin: 8px 0 12px;
+}
+
+.info-certificado p {
+    color: var(--texto-secundario);
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.detalhe-certificado {
+    color: var(--azul-suave);
+    font-size: 0.9rem;
+}
+
+/* ADICIONAL: Estilização da janela modal para ampliar o certificado */
+.modal-certificado {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.88);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-conteudo {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.modal-conteudo img {
+    width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    border: 2px solid var(--azul-brilho);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.botao-fechar-modal {
+    background-color: var(--azul-medio);
+    color: white;
+    border: 1px solid var(--azul-brilho);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* =========================================================
+   PÁGINA 3: HOBBIES E AUTORES (FOTOS PADRONIZADAS)
+   ========================================================= */
+
+.grade-hobbies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card-hobby {
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hobby:hover,
+.card-autor:hover {
+    transform: translateY(-6px);
+    border-color: var(--azul-brilho);
+}
+
+/* Caixa com altura fixa e object-fit para padronizar todas as capas/artes */
+.caixa-imagem-padrao {
+    width: 100%;
+    height: 320px;
+    background-color: #04070e;
+    border-bottom: 1px solid var(--borda-azul);
+    overflow: hidden;
+}
+
+.caixa-imagem-padrao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card-hobby:hover .caixa-imagem-padrao img {
+    transform: scale(1.04);
+}
+
+.conteudo-hobby {
+    padding: 22px;
+    flex: 1;
+}
+
+.categoria-hobby {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--azul-brilho);
+    margin-bottom: 6px;
+}
+
+.conteudo-hobby h3,
+.conteudo-autor h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    color: var(--texto-principal);
+}
+
+.conteudo-hobby p,
+.conteudo-autor p {
+    color: var(--texto-secundario);
+    font-size: 0.92rem;
+    text-align: justify;
+}
+
+/* AUTORES FAVORITOS */
+
+.secao-autores {
+    margin-top: 65px;
+}
+
+.grade-autores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.card-autor {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 22px;
+    align-items: center;
+    background-color: var(--preto-card);
+    border: 1px solid var(--borda-azul);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Caixa padronizada para fotos de autores */
+.caixa-imagem-autor {
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--borda-azul);
+    background-color: #04070e;
+}
+
+.caixa-imagem-autor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* =========================================================
+   RODAPÉ PADRONIZADO
+   ========================================================= */
+
+.rodape {
+    background-color: #04060c;
+    border-top: 1px solid var(--borda-azul);
+    padding: 24px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-rodape p {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--azul-suave);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.redes-sociais a:hover {
+    color: white;
+    background-color: rgba(29, 78, 216, 0.25);
+    border-color: var(--borda-azul);
+    transform: translateY(-3px);
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   ANIMAÇÕES
+   ========================================================= */
+
+.animar {
+    animation: surgir 0.7s ease both;
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 960px) {
+    .apresentacao {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .botoes-acao {
+        justify-content: center;
+    }
+
+    .grade-experiencias,
+    .grade-hobbies,
+    .grade-autores,
+    .card-certificado {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        flex-wrap: wrap;
+    }
+
+    .menu-botao {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 12px;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .moldura-perfil {
+        width: 230px;
+        height: 270px;
+    }
+
+    .card-autor {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .caixa-imagem-autor {
+        margin: auto;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+}
