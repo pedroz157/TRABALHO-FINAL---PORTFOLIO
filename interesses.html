@@ -4,116 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hobbies, jogos, livros, mangás e autores favoritos de Pedro Zione Sousa Neto.">
-    <title>Interesses | Pedro Zione</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <title>Interesses - Pedro Zione</title>
     <link rel="icon" href="Perfil.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo">Pedro Zione <span>&lt;/&gt;</span></a>
+    <header class="topo">
+        <div class="container-topo">
+            <a href="index.html" class="nome-site">Pedro Zione</a>
 
-        <button class="menu-botao" onclick="alternarMenu()" aria-label="Abrir menu" aria-expanded="false">
-            ☰ Menu
-        </button>
+            <button class="btn-menu" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
 
-        <nav id="menu" class="menu">
-            <a href="index.html">Sobre Mim</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="interesses.html" class="ativo" aria-current="page">Interesses</a>
-            <a href="#contato">Contato</a>
-        </nav>
+            <nav id="menu" class="navegacao">
+                <a href="index.html">Sobre Mim</a>
+                <a href="experiencia.html">Experiência</a>
+                <a href="interesses.html" class="ativo">Interesses</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="faixa">ESTRATÉGIA • FANTASIA ÉPICA • HORROR PSICOLÓGICO • LEITURA</div>
-
-    <main>
-        <section class="cabecalho-pagina animar">
-            <span class="subtitulo">ALÉM DO CÓDIGO</span>
-            <h1>Hobbies &amp; <span>Interesses</span></h1>
-            <p class="descricao-pagina">
-                Desde pequeno sou apaixonado por leitura e jogos — universos que estimulam o raciocínio estratégico, a imaginação e a criatividade no meu dia a dia.
-            </p>
+    <main class="conteudo">
+        <section class="titulo-pagina animar">
+            <h1>Hobbies e Interesses</h1>
+            <p>Desde criança gosto muito de ler e jogar — atividades que fazem parte da minha rotina e estimulam o raciocínio estratégico e a criatividade.</p>
         </section>
 
-        <section class="secao-hobbies animar">
-            <h2>Obras e Jogos <span>Favoritos</span></h2>
+        <section class="secao animar">
+            <h2>Obras e Jogos Favoritos</h2>
 
-            <div class="grade-hobbies">
-                <article class="card-hobby">
-                    <div class="caixa-imagem-padrao">
-                        <img src="TotalWarWarhammer.jpg" alt="Arte do jogo Total War: Warhammer">
+            <div class="grade-tres">
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="TotalWarWarhammer.jpg" alt="Total War: Warhammer">
                     </div>
-                    <div class="conteudo-hobby">
-                        <span class="categoria-hobby">JOGO FAVORITO • ESTRATÉGIA</span>
+                    <div class="corpo-card">
+                        <span class="tipo">Jogo Favorito</span>
                         <h3>Total War: Warhammer</h3>
                         <p>
-                            Combina gerenciamento de impérios por turnos com batalhas táticas em tempo real no universo de Warhammer Fantasy. O jogador comanda facções como o Império, Anões, Pele-verdes e Condes Vampiros contra as forças do Caos, gerenciando cidades, economia, diplomacia e exércitos completos com heróis, monstros e máquinas de guerra.
+                            Jogo de estratégia que mistura gerenciamento de impérios por turnos com batalhas táticas em tempo real no universo de Warhammer Fantasy. Permite comandar facções como o Império, Anões, Pele-verdes e Condes Vampiros, administrando cidades, diplomacia e exércitos completos.
                         </p>
                     </div>
                 </article>
 
-                <article class="card-hobby">
-                    <div class="caixa-imagem-padrao">
-                        <img src="SenhorDosAneis.jpg" alt="Capa do livro O Senhor dos Anéis - A Sociedade do Anel">
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="SenhorDosAneis.jpg" alt="O Senhor dos Anéis">
                     </div>
-                    <div class="conteudo-hobby">
-                        <span class="categoria-hobby">LIVRO FAVORITO • FANTASIA</span>
+                    <div class="corpo-card">
+                        <span class="tipo">Livro Favorito</span>
                         <h3>O Senhor dos Anéis</h3>
                         <p>
-                            Obra-prima de J.R.R. Tolkien dividida em três volumes: <em>A Sociedade do Anel</em>, <em>As Duas Torres</em> e <em>O Retorno do Rei</em>. A narrativa acompanha Frodo Bolseiro e seus companheiros na jornada pela Terra-média para destruir o Um Anel forjado por Sauron e impedir que as forças das trevas dominem o mundo.
+                            Obra clássica de fantasia escrita por J.R.R. Tolkien, dividida em <em>A Sociedade do Anel</em>, <em>As Duas Torres</em> e <em>O Retorno do Rei</em>. Acompanha a jornada de Frodo Bolseiro e seus companheiros pela Terra-média para destruir o Um Anel e impedir a ascensão de Sauron.
                         </p>
                     </div>
                 </article>
 
-                <article class="card-hobby">
-                    <div class="caixa-imagem-padrao">
-                        <img src="Tomie.jpg" alt="Capa do mangá Tomie de Junji Ito">
+                <article class="card-item">
+                    <div class="img-padrao">
+                        <img src="Tomie.jpg" alt="Mangá Tomie">
                     </div>
-                    <div class="conteudo-hobby">
-                        <span class="categoria-hobby">MANGÁ FAVORITO • TERROR</span>
+                    <div class="corpo-card">
+                        <span class="tipo">Mangá Favorito</span>
                         <h3>Tomie</h3>
                         <p>
-                            Obra de terror psicológico e corporal criada por Junji Ito. A história gira em torno de uma jovem misteriosa capaz de despertar obsessões extremas nas pessoas ao seu redor, gerando eventos perturbadores. Seu traço sobrenatural envolve a imortalidade e a capacidade de se regenerar e multiplicar a partir de partes do próprio corpo.
+                            Obra de terror psicológico e corporal criada por Junji Ito. A história acompanha uma garota misteriosa capaz de despertar obsessões extremas nas pessoas ao seu redor, marcada por sua imortalidade e pela capacidade de se regenerar e multiplicar a partir de partes do próprio corpo.
                         </p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="secao-autores animar">
-            <h2>Meus Autores <span>Favoritos</span></h2>
+        <section class="secao animar">
+            <h2>Autores Favoritos</h2>
 
-            <div class="grade-autores">
+            <div class="grade-dupla">
                 <article class="card-autor">
-                    <div class="caixa-imagem-autor">
-                        <img src="JunjiIto.jpg" alt="Foto do mangaká Junji Ito">
+                    <div class="img-autor">
+                        <img src="JunjiIto.jpg" alt="Junji Ito">
                     </div>
-                    <div class="conteudo-autor">
-                        <span class="categoria-hobby">MANGÁ DE TERROR • JAPÃO (1963)</span>
+                    <div class="corpo-autor">
+                        <span class="tipo">Mangaká • Terror</span>
                         <h3>Junji Ito</h3>
                         <p>
-                            Um dos maiores nomes mundiais do mangá de horror. Seu trabalho é reconhecido pelo nível impressionante de detalhes nas ilustrações e por narrativas que exploram o terror psicológico, o desconhecido e a natureza sombria do comportamento humano. Entre suas obras mais famosas estão <strong>Tomie</strong>, <strong>Uzumaki</strong> e <strong>Gyo</strong>.
+                            Autor japonês reconhecido mundialmente pelos mangás de horror. Suas obras chamam atenção pelo nível de detalhe nas ilustrações e por histórias que exploram o terror psicológico e o desconhecido, como <strong>Tomie</strong>, <strong>Uzumaki</strong> e <strong>Gyo</strong>.
                         </p>
                     </div>
                 </article>
 
                 <article class="card-autor">
-                    <div class="caixa-imagem-autor">
-                        <img src="Tolkien.png" alt="Foto do escritor J.R.R. Tolkien">
+                    <div class="img-autor">
+                        <img src="Tolkien.png" alt="J.R.R. Tolkien">
                     </div>
-                    <div class="conteudo-autor">
-                        <span class="categoria-hobby">LITERATURA FANTÁSTICA • REINO UNIDO (1892–1973)</span>
+                    <div class="corpo-autor">
+                        <span class="tipo">Escritor • Fantasia</span>
                         <h3>J.R.R. Tolkien</h3>
                         <p>
-                            Escritor, filólogo e professor britânico que revolucionou a literatura fantástica moderna ao criar toda a mitologia, mapas e idiomas da Terra-média. É autor de clássicos atemporais como <strong>O Hobbit</strong>, <strong>O Senhor dos Anéis</strong> e <strong>O Silmarillion</strong>.
+                            Escritor e professor britânico que marcou a literatura fantástica moderna ao construir toda a mitologia, história e línguas da Terra-média. É autor de obras fundamentais como <strong>O Hobbit</strong>, <strong>O Senhor dos Anéis</strong> e <strong>O Silmarillion</strong>.
                         </p>
                     </div>
                 </article>
@@ -122,25 +111,25 @@
     </main>
 
     <footer class="rodape" id="contato">
-        <div class="info-rodape">
-            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto — Londrina, PR</p>
-        </div>
+        <div class="container-rodape">
+            <p>© <span id="ano">2026</span> Pedro Zione Sousa Neto • Londrina - PR</p>
 
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Ícone do LinkedIn">
-                <span>LinkedIn</span>
-            </a>
+            <div class="links-sociais">
+                <a href="https://www.linkedin.com/in/pedro-sousa-694192452/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
+                    LinkedIn
+                </a>
 
-            <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="Github.png" alt="Ícone do GitHub">
-                <span>GitHub</span>
-            </a>
+                <a href="https://github.com/pedroz157" target="_blank" rel="noopener noreferrer">
+                    <img src="Github.png" alt="GitHub">
+                    GitHub
+                </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer" title="Enviar e-mail pelo Gmail">
-                <img src="gmail.png" alt="Ícone do Gmail">
-                <span>Gmail</span>
-            </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pedrozionesousaneto4@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="gmail.png" alt="Gmail">
+                    Gmail
+                </a>
+            </div>
         </div>
     </footer>
 </body>
