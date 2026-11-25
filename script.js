@@ -1,17 +1,11 @@
 function alternarMenu() {
     let menu = document.getElementById("menu");
-    let botao = document.querySelector(".menu-botao");
-
     menu.classList.toggle("aberto");
-
-    let aberto = menu.classList.contains("aberto");
-    botao.setAttribute("aria-expanded", aberto);
-    botao.textContent = aberto ? "✕ Fechar" : "☰ Menu";
 }
 
-let elementoAno = document.getElementById("ano");
-if (elementoAno) {
-    elementoAno.textContent = new Date().getFullYear();
+let ano = document.getElementById("ano");
+if (ano) {
+    ano.textContent = new Date().getFullYear();
 }
 
 function ampliarCertificado() {
