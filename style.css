@@ -247,6 +247,53 @@ body {
     font-size: 0.93rem;
 }
 
+.texto-contato {
+    color: #d4c9e0;
+    margin-bottom: 20px;
+    max-width: 720px;
+}
+
+.lista-contatos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #130e1c;
+    border-left: 4px solid #7e22ce;
+    padding: 16px 18px;
+    text-decoration: none;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.item-contato:hover {
+    transform: translateY(-3px);
+    border-left-color: #9f1d3f;
+}
+
+.item-contato img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.item-contato strong {
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.item-contato span {
+    color: #bfb3cc;
+    font-size: 0.85rem;
+    word-break: break-all;
+}
+
 .lista-experiencias {
     display: flex;
     flex-direction: column;
@@ -533,6 +580,7 @@ body {
     }
 
     .duas-colunas,
+    .lista-contatos,
     .grade-obras,
     .area-certificado {
         grid-template-columns: 1fr;
