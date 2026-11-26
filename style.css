@@ -267,19 +267,24 @@ body {
     border-left: 4px solid #7e22ce;
     padding: 16px 18px;
     text-decoration: none;
-    transition: transform 0.2s, border-color 0.2s;
+    transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
 .item-contato:hover {
     transform: translateY(-3px);
     border-left-color: #9f1d3f;
+    background-color: #1a1226;
 }
 
 .item-contato img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+.icone-github {
+    filter: invert(1);
 }
 
 .item-contato strong {
