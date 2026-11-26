@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -251,42 +247,26 @@ body {
     font-size: 0.93rem;
 }
 
-.linha-tempo {
-    border-left: 2px solid #4c1d57;
-    margin-left: 10px;
-    padding-left: 28px;
+.lista-experiencias {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 28px;
 }
 
-.item-tempo {
-    position: relative;
+.item-experiencia {
+    background-color: #130e1c;
+    border-left: 4px solid #7c1630;
+    padding: 24px;
 }
 
-.marcador-tempo {
-    position: absolute;
-    left: -35px;
-    top: 6px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #be185d;
-    border: 2px solid #0b090e;
-}
-
-.marcador-tempo.antigo {
-    background-color: #7e22ce;
-}
-
-.topo-item-tempo {
+.topo-experiencia {
     display: flex;
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
 }
 
-.topo-item-tempo h3 {
+.topo-experiencia h3 {
     font-size: 1.3rem;
     color: #ffffff;
 }
