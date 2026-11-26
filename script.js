@@ -3,11 +3,6 @@ function alternarMenu() {
     menu.classList.toggle("aberto");
 }
 
-let ano = document.getElementById("ano");
-if (ano) {
-    ano.textContent = new Date().getFullYear();
-}
-
 function ampliarCertificado() {
     let modal = document.getElementById("modalCertificado");
     if (modal) {
